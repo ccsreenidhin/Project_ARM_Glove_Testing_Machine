@@ -1,0 +1,310 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"5 D:\Working\gloves\adc.c
+[v _adcinit adcinit `(v  1 e 0 0 ]
+"13
+[v _adcread adcread `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"3 D:\Working\gloves\ioport.c
+[v _ioinit ioinit `(v  1 e 0 0 ]
+"11
+[v _solinoidout solinoidout `(v  1 e 0 0 ]
+"20
+[v _pneumaticout pneumaticout `(v  1 e 0 0 ]
+[v i2_pneumaticout pneumaticout `(v  1 e 0 0 ]
+"30
+[v _ledout ledout `(v  1 e 0 0 ]
+"10 D:\Working\gloves\main.c
+[v _ISR ISR `II(v  1 e 0 0 ]
+"44
+[v _main main `(v  1 e 0 0 ]
+"73
+[v _communication communication `(v  1 e 0 0 ]
+"141
+[v _test1 test1 `(v  1 e 0 0 ]
+"173
+[v _test2 test2 `(v  1 e 0 0 ]
+"205
+[v _offsetread offsetread `(v  1 e 0 0 ]
+"213
+[v _ejectbad ejectbad `(v  1 e 0 0 ]
+"232
+[v _ejectgood ejectgood `(v  1 e 0 0 ]
+"252
+[v _comparison comparison `(v  1 e 0 0 ]
+"5 D:\Working\gloves\timer.c
+[v _timerinit timerinit `(v  1 e 0 0 ]
+"11
+[v _timeronesec timeronesec `(v  1 e 0 0 ]
+"22
+[v _delaysec delaysec `(v  1 e 0 0 ]
+"5 D:\Working\gloves\uart.c
+[v _uartinit uartinit `(v  1 e 0 0 ]
+"17
+[v _uarttx uarttx `(v  1 e 0 0 ]
+"28
+[v _uarttxch uarttxch `(v  1 e 0 0 ]
+"34
+[v _uartrx uartrx `(uc  1 e 1 0 ]
+"4 D:\Working\gloves\adc.c
+[v _pres pres `ui  1 e 2 0 ]
+"2571 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4550.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"2727
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"3627
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"3742
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3976
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"4173
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4394
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S87 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"4426
+[s S94 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[s S101 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 TRISC3 1 0 :1:3 
+]
+[u S104 . 1 `S87 1 . 1 0 `S94 1 . 1 0 `S101 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES104  1 e 1 @3988 ]
+"4565
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"5502
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"5711
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"6008
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"6019
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"6030
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"6664
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
+"7103
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"7173
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"7263
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+"7391
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"7397
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"8671
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"8746
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"8752
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+"9159
+[v _INTCON INTCON `VEuc  1 e 1 @4082 ]
+"10505
+[v _RBIF RBIF `VEb  1 e 0 @32656 ]
+"10545
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"10743
+[v _T0IF T0IF `VEb  1 e 0 @32658 ]
+"10955
+[v _TXIF TXIF `VEb  1 e 0 @31988 ]
+[s S21 Test_Setting_Tag 5 `uc 1 Gloves_Size 1 0 `uc 1 Inflate_time_1 1 1 `uc 1 Inflate_time_2 1 2 `uc 1 Air_eject_time_for_good 1 3 `uc 1 Air_eject_time_for_bad 1 4 ]
+"19 D:\Working\gloves\header.h
+[v _glove glove `S21  1 e 5 0 ]
+[s S27 Pressure_Setting_Tag 10 `ui 1 Upper_Threshold 2 0 `ui 1 Lower_Threshold 2 2 `ui 1 Nominal_Pressure 2 4 `ui 1 Positive_Tolerance 2 6 `ui 1 Negative_Tolerance 2 8 ]
+"29
+[v _value value `S27  1 e 10 0 ]
+[s S33 Sensor_Data_To_Send_Tag 11 `ui 1 sensor_offset 2 0 `ui 1 sensor_P1 2 2 `ui 1 sensor_P2 2 4 `ui 1 sensor_P3 2 6 `ui 1 sensor_P4 2 8 `uc 1 sensor_Status 1 10 ]
+"40
+[v _sensor sensor `[4]S33  1 e 44 0 ]
+"41 D:\Working\gloves\main.c
+[v _good good `[4]i  1 e 8 0 ]
+"44
+[v _main main `(v  1 e 0 0 ]
+{
+"71
+} 0
+"5 D:\Working\gloves\uart.c
+[v _uartinit uartinit `(v  1 e 0 0 ]
+{
+"15
+} 0
+"5 D:\Working\gloves\timer.c
+[v _timerinit timerinit `(v  1 e 0 0 ]
+{
+"8
+} 0
+"173 D:\Working\gloves\main.c
+[v _test2 test2 `(v  1 e 0 0 ]
+{
+"203
+} 0
+"141
+[v _test1 test1 `(v  1 e 0 0 ]
+{
+"171
+} 0
+"205
+[v _offsetread offsetread `(v  1 e 0 0 ]
+{
+"211
+} 0
+"13 D:\Working\gloves\adc.c
+[v _adcread adcread `(i  1 e 2 0 ]
+{
+"15
+[v adcread@x x `i  1 a 2 6 ]
+"13
+[v adcread@channel channel `i  1 p 2 0 ]
+"24
+} 0
+"3 D:\Working\gloves\ioport.c
+[v _ioinit ioinit `(v  1 e 0 0 ]
+{
+"9
+} 0
+"232 D:\Working\gloves\main.c
+[v _ejectgood ejectgood `(v  1 e 0 0 ]
+{
+"234
+[v ejectgood@i i `i  1 a 2 7 ]
+"249
+} 0
+"213
+[v _ejectbad ejectbad `(v  1 e 0 0 ]
+{
+"215
+[v ejectbad@i i `i  1 a 2 7 ]
+"230
+} 0
+"11 D:\Working\gloves\ioport.c
+[v _solinoidout solinoidout `(v  1 e 0 0 ]
+{
+[v solinoidout@x x `i  1 p 2 0 ]
+"18
+} 0
+"20
+[v _pneumaticout pneumaticout `(v  1 e 0 0 ]
+{
+[v pneumaticout@x x `i  1 p 2 0 ]
+"28
+} 0
+"252 D:\Working\gloves\main.c
+[v _comparison comparison `(v  1 e 0 0 ]
+{
+"254
+[v comparison@i i `i  1 a 2 10 ]
+"261
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"73 D:\Working\gloves\main.c
+[v _communication communication `(v  1 e 0 0 ]
+{
+"75
+[v communication@rx rx `uc  1 a 1 6 ]
+"139
+} 0
+"28 D:\Working\gloves\uart.c
+[v _uarttxch uarttxch `(v  1 e 0 0 ]
+{
+[v uarttxch@ch ch `uc  1 a 1 wreg ]
+[v uarttxch@ch ch `uc  1 a 1 wreg ]
+[v uarttxch@ch ch `uc  1 a 1 0 ]
+"32
+} 0
+"17
+[v _uarttx uarttx `(v  1 e 0 0 ]
+{
+[v uarttx@s s `*.35uc  1 p 2 0 ]
+"25
+} 0
+"34
+[v _uartrx uartrx `(uc  1 e 1 0 ]
+{
+"36
+[v uartrx@rx rx `uc  1 a 1 0 ]
+"40
+} 0
+"30 D:\Working\gloves\ioport.c
+[v _ledout ledout `(v  1 e 0 0 ]
+{
+[v ledout@x x `i  1 p 2 0 ]
+"37
+} 0
+"22 D:\Working\gloves\timer.c
+[v _delaysec delaysec `(v  1 e 0 0 ]
+{
+"24
+[v delaysec@i i `i  1 a 2 3 ]
+"22
+[v delaysec@n n `i  1 p 2 0 ]
+"27
+} 0
+"11
+[v _timeronesec timeronesec `(v  1 e 0 0 ]
+{
+"19
+} 0
+"5 D:\Working\gloves\adc.c
+[v _adcinit adcinit `(v  1 e 0 0 ]
+{
+"11
+} 0
+"10 D:\Working\gloves\main.c
+[v _ISR ISR `II(v  1 e 0 0 ]
+{
+"32
+} 0
+"20 D:\Working\gloves\ioport.c
+[v i2_pneumaticout pneumaticout `(v  1 e 0 0 ]
+{
+[v i2pneumaticout@x x `i  1 p 2 0 ]
+"28
+} 0
